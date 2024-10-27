@@ -1,0 +1,56 @@
+<!--10/24/24 Shaniya J Griffin
+Assignment 2.2
+To Do:
+    I plan on making is a typing or maze game. (I would have prefered the maze but, I wasn't sure how I was going to make it work, I'll try to add it in at a later date. I need to do more research)
+    1. Place title, button, and links
+    2. start javascript - make sure everything is working correctly (finished 10/25/24)
+    3. start css - started after javascript (10/25/24)
+-->
+<!--10/25/24 SJG
+Assignment 2.2
+Changes:
+    1. I added sound, so that users will know when they type a word correctly or incorrectly
+    2. I decided to make 3 separate screens instead of having everything on the same screen
+     -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="game.css">
+    <script src="game.js" defer></script>
+</head>
+<body>
+    <!--start screen-->
+    <div id="startScreen">
+         <!--Connection for Index and Boards-->
+        <a href="index.html">Index</a><br>
+        <a href="boards.html">Boards</a><br>
+        <a href="game.html">Games</a>
+        <h1>Quick Type</h1>
+        <h3>Type quickly!</h3>
+        <h3>Don't make mistakes!</h3>
+        <button onclick="startGame()">START GAME</button>
+    </div>
+    <!--game screen; It's where users will play the game-->
+    <div id="gameScreen">
+        <p id="textDisplay"></p>
+        <p id="timerDisplay"></p>
+        <input type="text" id="textInput" placeholder="Typing..." autofocus>
+    </div>
+    <!--game over screen; It's where users will see their score-->
+    <div id="gameOverScreen">
+        <h2>Game Over</h2>
+        <p id="finalScore"></p>
+        <p id="highScore"></p>
+        <button onclick="restartGame()">RESTART GAME</button>
+    </div>
+
+    <!--sound effects -->
+    <audio id="gameStartSound" src="Sound/game-start-6104.mp3" type="audio/mp3" preload="auto"></audio>
+    <audio id="correctSound" src="Sound/ding-36029.mp3" type="audio/mp3" preload="auto"></audio>
+    <audio id="wrongSound" src="Sound/wrong-47985.mp3" type="audio/mp3" preload="auto"></audio>
+</body>
+</html>

@@ -1,0 +1,56 @@
+body {
+    background-image: linear-gradient(skyblue, white);
+}
+
+h1 {
+    text-align: center;
+    color:crimson
+}
+
+#spooky {
+    color: orange;
+}
+
+#presents {
+    color:aliceblue
+}
+
+#hearts {
+    color: pink
+}
+
+#pranks {
+    color:green
+}
+
+p {
+    color: darkred;
+}
+
+div {
+    text-align: center;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+
+
+aside {
+    flex: 1 0 10%;
+}
+
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color:aqua;
+}
+
